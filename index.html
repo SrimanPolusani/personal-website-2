@@ -25,7 +25,7 @@
 								<div class="content color0 span-5">
 									<h1 class="major">Hello, my name<br/>
 									is Sriman Polusani</h1>
-									<p>I am a Machine Learning Engineer and an FSU M.S. Data Science grad. I specialize in deep learning architectures, recently leveraged <b>1,170 CPU hours in FSU High Performace Computing Cluster</b> to preprocess 430 million records and train a GRU-Dense Neural Network Architecture to <b>predict acute gylcemic events 5 to 7 hours in advance</b> in ICU patients. I bridge the gap between statistical theory and scalable engineering to build AI systems that perform in the real world.</p>
+									<p>I am a Machine Learning Engineer and an FSU M.S. Data Science grad. I specialize in deep learning architectures, recently leveraged 1,170 CPU hours in FSU High Performace Computing Cluster to preprocess 430 million records and train a GRU-Dense Neural Network Architecture to predict acute gylcemic events 5 to 7 hours in advance in ICU patients. I bridge the gap between statistical theory and scalable engineering to build AI systems that perform in the real world.</p>
 									<ul class="actions">
 										<li><a href="#projects" class="button primary color1 icon solid fa-angle-right">Projects</a></li>
 									</ul>
@@ -53,8 +53,8 @@
 												<tr>
 													<td>M.S Data Science</td>
 													<td>Florida State University, Tallahassee</td>
-													<td>2024-25*</td>
-													<td>3.52*/4</td>
+													<td>2024-25</td>
+													<td>3.57/4</td>
 												</tr>
 												<tr>
 													<td>B.Tech. Mech</td>
@@ -107,32 +107,49 @@
 										<h3>Programming Skills</h3>
 										<ul>
 											<li>Python</li>
-											<li>NumPy</li>
-											<li>Pandas</li>
-											<li>Keras</li>
-											<li>Scikit-Learn</li>
-											<li>TensorFlow</li>
+											<li>R</li>
+											<li>Java (Basic)</li>
 										</ul>
+
 										<h3>SQL Databases</h3>
 										<ul>
 											<li>MySQL</li>
 											<li>PostgreSQL</li>
+											<li>SQLAlchemy</li>
 											<li>SQLite3</li>
-											<li>Microsoft SQL Server</li>
 										</ul>
 									</div>
-									
 									<div class="span-1-25">
-										<h3>Machine Learning</h3>
+										
+
+										<h3>ML Frameworks & Libraries</h3>
 										<ul>
+											<li>Hugging Face</li>
+											<li>LangGraph</li>
+											<li>PyTorch</li>
+											<li>TensorFlow</li>
+											<li>Keras</li>
+											<li>Scikit-Learn</li>
+											<li>Pandas</li>
+											<li>NumPy</li>
+										</ul>
+										<h3>Version Control</h3>
+										<ul>
+											<li>GitHub</li>
+											<li>Git Bash</li>
+										</ul>
+									</div>
+									<div class="span-1-25">
+										<h3>AI & ML</h3>
+										<ul>
+											<li>LLMs, RAG</li>
 											<li>Supervised Learning</li>
 											<li>Unsupervised Learning</li>
 											<li>Reinforcement Learning</li>
 											<li>Recommender Systems</li>
-											<li>Artificial Neural Networks</li>
-											<li>Decision Trees</li>
-											<li>Ensemble Methods</li>
+											<li>Neural Networks</li>
 										</ul>
+
 										<h3>Data Visualization</h3>
 										<ul>
 											<li>Power BI</li>
@@ -144,6 +161,18 @@
 									</div>
 									
 									<div class="span-1-25">
+										<h3>Cloud & MLOps:</h3>
+										<ul>
+											<li>AWS</li>
+											<li>Spark</li>
+											<li>Databricks</li>
+											<li>Linux</li>
+											<li>Slurm</li>
+											<li>Databricks</li>
+										</ul>
+
+										
+
 										<h3>Mathematics</h3>
 										<ul>
 											<li>Linear Algebra</li>
@@ -151,18 +180,6 @@
 											<li>Probability</li>
 											<li>Statistics</li>
 										</ul>
-										<h3>Version Control</h3>
-										<ul>
-											<li>GitHub</li>
-											<li>Git Bash</li>
-										</ul>
-										<h3>Web Automation and Scraping</h3>
-										<ul>
-											<li>Flask</li>
-											<li>Selenium</li>
-											<li>bs4</li>
-										</ul>
-										
 									</div>
 								</div>	
 							</section>
@@ -173,32 +190,30 @@
 									<h2 class="major">Projects</h2>
 
 									<div class="project-header">
-										<h3><a href="https://github.com/SrimanPolusani/ANN_diagnostics" target="_blank" rel="noopener noreferrer">Artificial Neural Networks (ANN) - Diagnostics</a></h3>
+										<h3><a href="https://github.com/SrimanPolusani/gru-dense-icu-glucose-prediction" target="_blank" rel="noopener noreferrer">GRU-Dense Neural Networks: Acute Glycemic Events Predictive Monitoring </a></h3>
 										<ul class="actions">
-											<li><a href="https://github.com/SrimanPolusani/ANN_diagnostics" class="button small icon brands fa-github" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+											<li><a href="https://github.com/SrimanPolusani/gru-dense-icu-glucose-prediction" class="button small icon brands fa-github" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
 	        							</ul>
 									</div>
 									<ul>
-										<li>Developed and evaluated three distinct Artificial Neural Network architectures using TensorFlow and Keras, applying Adam
-optimization and hyperparameter tuning for optimal model performance.</li>
-										<li>Implemented feature scaling using Scikit-learn, applying standardization and polynomial transformations.</li>
-										<li>Conducted cross-validation for model selection and validation, and model diagnosis to identify areas of refinement,
-achieving high accuracy on test data with an R-squared of 98.6%.</li>
+										<li>Used <b>1170 CPU hours</b> in <b>FSU High Performance Computing Cluster</b> for data preprocessing, modeling and validation.</li>
+										<li>Architected scalable data ingestion process: <b>31 datasets (430 million records)</b> into an indexed SQL database.</li>
+										<li>Implemented parallel processing and custom memory management across multiple nodes and cores.</li>
+										<li>Engineered an ETL data pipeline to convert eICU data into a tensors with 128 static and dynamic features.</li>
+										<li>The model <b>predicts hyperglycemic events 5-7 hours in advance</b>, achieving a recall of 98% and precision of 78%.</li>
 									</ul>
 
 									<div class="project-header">
-										<h3><a href="https://github.com/SrimanPolusani/polynomial_logistic_regression" target="_blank" rel="noopener noreferrer">Logistic Regression Analysis for Detecting Cancerous Tumors</a></h3>
+										<h3><a href="https://github.com/SrimanPolusani/polynomial-logistic-regression" target="_blank" rel="noopener noreferrer">Logistic Regression Analysis for Scratch</a></h3>
 										<ul class="actions">
-											<li><a href="https://github.com/SrimanPolusani/polynomial_logistic_regression" class="button small icon brands fa-github" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+											<li><a href="https://github.com/SrimanPolusani/polynomial-logistic-regression" class="button small icon brands fa-github" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
 	        							</ul>
 									</div>
 									<ul>
-										<li>Developed a logistic regression model from scratch, with polynomial features to accurately capture non-linear data patterns.</li>
-										<li>Led a 3-member team, directing the project workflow, guiding teammates through first principles, and model tuning.</li>
-										<li>Implemented core algorithms (gradient descent, L2 regularization and z-score normalization) from scratch with NumPy using
-mathematical equations for finding optimal parameters, hyperparameter tuning and feature scaling, reducing cost by 81%.</li>
-										<li>Validated model’s predictive power using Scikit-learn for data splitting and performance evaluation, correctly identifying
-91.7% of actual positive cases and with an F1 score of 84.6%.</li>
+										<li><b>Implemented core algorithms from scratch</b> (Gradient descent and L2 regularization) using mathematical equations.</li>
+										<li>Led a 3 member team, directing the project workflow, guiding teammates through first principles, and fine-tuning.</li>
+										<li>Performed hyperparameter tuning and evaluated model, achieving 91.7% Recall and an F1 score of 84.6%.</li>
+										<li>Created Matplotlib visualizations to convey model performance, guide diagnosis and model tuning.</li>
 									</ul>	
 									
 								</div>
@@ -212,20 +227,17 @@ mathematical equations for finding optimal parameters, hyperparameter tuning and
 	        							</ul>
 									</div>
 									<ul>
-										<li>Built a predictive model for estimation of A1c levels, enabling data-driven decision making in diabetes health risk assessment.</li>
-										<li>Designed and executed ETL (Extract, Transform, Load) processes in a Python data pipeline with data governance principles to
-process and clean 8 large datasets (2,854 participants), and ensured data quality with validation checks.</li>
-										<li>Performed data exploration, which involves data manipulation using Pandas, array operations using
-NumPy, data visualizations using Matplotlib and Seaborn, feature engineering, and statistical analysis to analyze trends, patterns, and anomalies.</li>
-										<li>Implemented experimental methodologies for the feature selection process to identify 6 statistically significant predictors from complex biomedical data, after building and evaluating 26 candidate models.</li>
-										<li>Demonstrated problem-solving skills by employing sophisticated diagnostic and analytical techniques to address issues such
-as outliers and non-normal residuals, subsequently achieving a low prediction error of 0.36%.</li>
+										<li>Built predictive model for estimation of A1c levels, enabling data-driven analyses in diabetes health risk assessment.</li>
+										<li>Processed and cleaned 8 large datasets (2,854 participants), implementing validation checks to ensure data quality.</li>
+										<li>Utilized Pandas, Matplotlib, and Seaborn for data exploration, data visualization, and statistical analysis.</li>
+										<li>Identified 6 statistically significant predictors from 26 candidate models through feature selection.</li>
+										<li>Achieved low prediction error of 0.36% by diagnosing and solving model issues like outliers and non-normal residuals.</li>
 									</ul>
 
 									<div class="project-header">
-										<h3><a href="https://github.com/SrimanPolusani/image_recognition" target="_blank" rel="noopener noreferrer">Image Recognition of Handwritten Digits Using an Artificial Neural Network</a></h3>
+										<h3><a href="https://github.com/SrimanPolusani/image-recognition" target="_blank" rel="noopener noreferrer">Image Recognition of Handwritten Digits using Artificial Neural Networks</a></h3>
 										<ul class="actions">
-											<li><a href="https://github.com/SrimanPolusani/image_recognition" class="button small icon brands fa-github" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+											<li><a href="https://github.com/SrimanPolusani/image-recognition" class="button small icon brands fa-github" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
 	        							</ul>
 									</div>
 									<ul>
@@ -233,6 +245,22 @@ as outliers and non-normal residuals, subsequently achieving a low prediction er
 and deployed a multi-layered neural network with hybrid architecture, achieving 95.5% accuracy on 10,000 test images.</li>
 										<li>Achieved high reliability across all digit classes with a macro average precision of 96% and recall of 95%.</li>
 										<li>Created dashboards that report the accuracy of the model by displaying the predictions and actual values with the test images.</li>
+									</ul>
+								</div>
+
+								<div class="content span-6">
+									<div class="project-header">
+										<h3><a href="https://github.com/SrimanPolusani/ANN-diagnostics" target="_blank" rel="noopener noreferrer">Artificial Neural Networks (ANN) - Diagnostics</a></h3>
+										<ul class="actions">
+											<li><a href="https://github.com/SrimanPolusani/ANN-diagnostics" class="button small icon brands fa-github" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+	        							</ul>
+									</div>
+									<ul>
+										<li>Developed and evaluated three distinct Artificial Neural Network architectures using TensorFlow and Keras, applying Adam
+optimization and hyperparameter tuning for optimal model performance.</li>
+										<li>Implemented feature scaling using Scikit-learn, applying standardization and polynomial transformations.</li>
+										<li>Conducted cross-validation for model selection and validation, and model diagnosis to identify areas of refinement,
+achieving high accuracy on test data with an R-squared of 98.6%.</li>
 									</ul>
 								</div>
 								
@@ -244,41 +272,33 @@ and deployed a multi-layered neural network with hybrid architecture, achieving 
 										<h3>
 											The Complete Python Pro BootCamp - 100 Days Course</h3>
 											<ul>
-												<li>Built 80 course projects, covering data analysis, Python software development, authentication, automation, and web scraping.</li>
-												<li>Conducted exploratory data analysis which involves cleaning, and preprocessing large structured and unstructured datasets
-with Pandas and NumPy, data visualization with Matplotlib, and analysis and interpretation of data for decision making.</li>
-												<li>Automated tasks by building social media bots with Selenium and scraped eCommerce websites to collect data on discounts.
-												</li>
+												<li><b>Built 80 projects</b>, covering data science, Python software development, RESTful APIs, automation, and web scraping.</li>
+												<li>Conducted data analysis and visualization using Pandas, NumPy, Scikit Learn, Plotly, and Matplotlib.</li>
+												<li>Automated tasks by building social media bots with Selenium and scraped eCommerce websites for data on discounts.</li>
 											</ul>
+
+										<h3>Machine Learning Specialization - 3 Courses</h3>
+										<ul>
+											<li><b>Built 15+ machine learning models</b> (regression, neural networks, trees, clustering, recommenders, reinforcement learning)</li>
+											<li>Developed models using first principles, strengthening intuitive understanding of mathematics in ML algorithms.</li>
+											<li>Built, trained, and tuned models with machine learning frameworks like TensorFlow, Keras, and Scikit-learn.</li>
+										</ul>
+
 										<h3>Google IT Automation with Python - 3 Courses</h3>
 											<ul>
-												<li>Learned to manage code with Git and collaborate through GitHub.</li>
-												<li>Learned Python, automating data processes, root cause analysis, A/B testing, troubleshooting, and debugging techniques.
-</li>
+												<li>Gained expertise in automating systems with Python, root cause analysis, GitHub, troubleshooting, and debugging techniques.</li>
 											</ul>
-									
 								</div>
-								
-								<div class="content color4 span-6">
-									<h3>Machine Learning Specialization - 3 Courses</h3>
-										<ul>
-											<li>Built 9 machine learning models for predictive analytics, classification and image recognition, using algorithms like linear
-	regression, logistic regression, artificial neural networks, clustering (KMeans), decision trees, and random forests.</li>
-											<li>Built, trained, and tuned models with machine learning frameworks like TensorFlow, Keras, and Scikit-learn.</li>
-											<li>Developed and optimized models using first principles, strengthening intuitive understanding of mathematics in ML algorithms.</li>
-										</ul>
-								</div>
-				
 							</section>
 
 							<!-- Panel -->
 							<section class="panel banner">
-								<div class="content color4-alt span-2-25">			
+								<div class="content color4-alt span-2-50">			
 									<h2>Contact Info</h2>
 									<ul class="contact-icons color1">
 										<li class="icon brands fa-github"><a href="https://github.com/SrimanPolusani" target="_blank" rel="noopener noreferrer">github.com/SrimanPolusani</a></li>
 										<li class="icon brands fa-linkedin-in"><a href="https://linkedin.com/in/SrimanP" target="_blank" rel="noopener noreferrer">linkedin.com/in/SrimanP</a></li>
-										<li class="icon solid fa-envelope"><a href="mailto:srimanpolusani1@gmail.com">srimanpolusani1@gmail.com</a></li>
+										<li class="icon solid fa-envelope"><a href="mailto:sriman.polusani@outlook.com">sriman.polusani@outlook.com</a></li>
 										<li class="icon solid fa-phone"><a href="tel:+18509993229">+1 (850) 999-3229</a></li>
 										<li class="icon brands fa-instagram"><a href="https://instagram.com/sriman_py" target="_blank" rel="noopener noreferrer">@sriman_py</a></li>
 									</ul>
